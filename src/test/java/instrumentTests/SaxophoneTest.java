@@ -28,4 +28,11 @@ public class SaxophoneTest {
     public void canPlay(){
     assertEquals("Saxomaphoooooooone", saxophone.play());
     }
+
+    @Test
+    public void canStock(){
+        assertEquals(150.00, saxophone.getBuyPrice(), 0);
+        assertEquals(200.00, saxophone.getSellPrice(), 0);
+        assertEquals(1.33, saxophone.calculateMarkup(), 0.01);
+    }
 }

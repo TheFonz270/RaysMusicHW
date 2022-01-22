@@ -32,4 +32,11 @@ public class PianoTest {
     public void canPlay(){
         assertEquals("god's song", piano.play());
     }
+
+    @Test
+    public void canStock(){
+        assertEquals(800.00, piano.getBuyPrice(), 0);
+        assertEquals(1200.00, piano.getSellPrice(), 0);
+        assertEquals(1.5, piano.calculateMarkup(), 0);
+    }
 }

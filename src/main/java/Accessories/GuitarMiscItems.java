@@ -1,25 +1,19 @@
 package Accessories;
 
-public class GuitarMiscItems {
-    private String name;
-    private double buyPrice;
-    private double sellPrice;
+import behaviours.ISell;
+import shop.Stock;
 
-    public GuitarMiscItems(String name, double buyPrice, double sellPrice) {
+public class GuitarMiscItems extends Stock implements ISell {
+    private String name;
+
+
+    public GuitarMiscItems(double buyPrice, double sellPrice, String name) {
+        super(buyPrice, sellPrice);
         this.name = name;
-        this.buyPrice = buyPrice;
-        this.sellPrice = sellPrice;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getBuyPrice() {
-        return buyPrice;
-    }
-
-    public double getSellPrice() {
-        return sellPrice;
-    }
 }

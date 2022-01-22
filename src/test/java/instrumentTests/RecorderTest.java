@@ -31,4 +31,11 @@ public class RecorderTest {
     public void canPlay(){
         assertEquals("foooooo foo", recorder.play());
     }
+
+    @Test
+    public void canStock(){
+        assertEquals(50.00, recorder.getBuyPrice(), 0);
+        assertEquals(75.00, recorder.getSellPrice(), 0);
+        assertEquals(1.5, recorder.calculateMarkup(), 0);
+    }
 }

@@ -27,4 +27,11 @@ public class TrumpetTest {
     public void canPlay(){
         assertEquals("toot toot", trumpet.play());
     }
+
+    @Test
+    public void canStock(){
+        assertEquals(120.00, trumpet.getBuyPrice(), 0);
+        assertEquals(180.00, trumpet.getSellPrice(), 0);
+        assertEquals(1.5, trumpet.calculateMarkup(), 0);
+    }
 }

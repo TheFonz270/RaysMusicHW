@@ -30,4 +30,11 @@ public class GuitarTest {
     public void canPlay(){
         assertEquals("twing twang", guitar.play());
     }
+
+    @Test
+    public void canStock(){
+        assertEquals(80.00, guitar.getBuyPrice(), 0);
+        assertEquals(120.00, guitar.getSellPrice(), 0);
+        assertEquals(1.5, guitar.calculateMarkup(), 0);
+    }
 }
