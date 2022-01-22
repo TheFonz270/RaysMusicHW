@@ -1,13 +1,15 @@
 package Instruments;
 
 import instrumentTypes.GuitarTypes;
+import instrumentTypes.Strings;
 
-public class Guitar {
+public class Guitar extends Strings {
 
     private GuitarTypes type;
     private int numOfStrings;
 
-    public Guitar(GuitarTypes type, int numOfStrings){
+    public Guitar(String brand, GuitarTypes type, int numOfStrings){
+        super(brand);
         this.type = type;
         this.numOfStrings = numOfStrings;
     }
@@ -18,5 +20,9 @@ public class Guitar {
 
     public int getNumOfStrings() {
         return numOfStrings;
+    }
+
+    public String play(){
+        return "twing twang";
     }
 }

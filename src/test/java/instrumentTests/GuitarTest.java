@@ -16,12 +16,18 @@ public class GuitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar(GuitarTypes.ACOUSTIC, 6);
+        guitar = new Guitar("Gibson", GuitarTypes.ACOUSTIC, 6);
     }
 
     @Test
     public void canGetType() {
+        assertEquals("Gibson", guitar.getBrand());
         assertEquals(GuitarTypes.ACOUSTIC, guitar.getType());
         assertEquals(6, guitar.getNumOfStrings());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("twing twang", guitar.play());
     }
 }

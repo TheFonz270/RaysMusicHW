@@ -1,13 +1,15 @@
 package Instruments;
 
 import instrumentTypes.PianoTypes;
+import instrumentTypes.Strings;
 
-public class Piano {
+public class Piano extends Strings {
 
     private PianoTypes type;
     private int numOfKeys;
 
-    public Piano(PianoTypes type, int numOfKeys){
+    public Piano(String brand, PianoTypes type, int numOfKeys){
+        super(brand);
         this.type = type;
         this.numOfKeys = numOfKeys;
     }
@@ -18,5 +20,9 @@ public class Piano {
 
     public int getNumOfKeys() {
         return numOfKeys;
+    }
+
+    public String play(){
+        return "god's song";
     }
 }

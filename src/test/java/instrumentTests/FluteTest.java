@@ -14,11 +14,17 @@ public class FluteTest {
 
     @Before
     public void setUp() {
-        flute = new Flute(FluteTypes.STANDARD);
+        flute = new Flute("Miyazawa", FluteTypes.STANDARD);
     }
 
     @Test
     public void canGetType() {
+        assertEquals("Miyazawa", flute.getBrand());
         assertEquals(FluteTypes.STANDARD, flute.getType());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("fwooooo foo", flute.play());
     }
 }

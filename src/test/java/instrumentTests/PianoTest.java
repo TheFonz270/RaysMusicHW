@@ -18,12 +18,18 @@ public class PianoTest {
 
     @Before
     public void setUp() {
-        piano = new Piano(PianoTypes.GRAND, 88);
+        piano = new Piano("Yamaha", PianoTypes.GRAND, 88);
     }
 
     @Test
     public void canGetType() {
+        assertEquals("Yamaha", piano.getBrand());
         assertEquals(PianoTypes.GRAND, piano.getType());
         assertEquals(88, piano.getNumOfKeys());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("god's song", piano.play());
     }
 }

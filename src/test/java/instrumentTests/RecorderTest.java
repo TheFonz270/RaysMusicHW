@@ -18,11 +18,17 @@ public class RecorderTest {
 
     @Before
     public void setUp() {
-        recorder = new Recorder(RecorderTypes.ALTO);
+        recorder = new Recorder("Yamaha", RecorderTypes.ALTO);
     }
 
     @Test
     public void canGetType() {
+        assertEquals("Yamaha", recorder.getBrand());
         assertEquals(RecorderTypes.ALTO, recorder.getType());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("foooooo foo", recorder.play());
     }
 }
