@@ -8,8 +8,8 @@ public class Piano extends Strings {
     private PianoTypes type;
     private int numOfKeys;
 
-    public Piano(String brand, PianoTypes type, int numOfKeys){
-        super(brand);
+    public Piano(double buyPrice, double sellPrice, String brand, PianoTypes type, int numOfKeys){
+        super(buyPrice, sellPrice, brand);
         this.type = type;
         this.numOfKeys = numOfKeys;
     }

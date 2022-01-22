@@ -16,7 +16,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar("Gibson", GuitarTypes.ACOUSTIC, 6);
+        guitar = new Guitar(80.00, 120.00, "Gibson", GuitarTypes.ACOUSTIC, 6);
     }
 
     @Test

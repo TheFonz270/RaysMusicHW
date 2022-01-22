@@ -16,7 +16,7 @@ public class TrumpetTest {
 
     @Before
     public void setUp() {
-        trumpet = new Trumpet("Jean Paul", TrumpetTypes.Bass);
+        trumpet = new Trumpet(120.00, 180.00, "Jean Paul", TrumpetTypes.Bass);
     }
 
     @Test

@@ -7,8 +7,8 @@ public class Recorder extends WoodWind {
 
     private RecorderTypes type;
 
-    public Recorder(String brand, RecorderTypes type){
-        super(brand);
+    public Recorder(double buyPrice, double sellPrice, String brand, RecorderTypes type){
+        super(buyPrice, sellPrice, brand);
         this.type = type;
     }
 

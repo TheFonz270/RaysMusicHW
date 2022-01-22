@@ -14,7 +14,7 @@ public class FluteTest {
 
     @Before
     public void setUp() {
-        flute = new Flute("Miyazawa", FluteTypes.STANDARD);
+        flute = new Flute(40.00, 60.00, "Miyazawa", FluteTypes.STANDARD);
     }
 
     @Test

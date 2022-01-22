@@ -7,8 +7,8 @@ public class Flute extends WoodWind {
 
     private FluteTypes type;
 
-    public Flute(String brand, FluteTypes type){
-        super(brand);
+    public Flute(double buyPrice, double sellPrice, String brand, FluteTypes type){
+        super(buyPrice, sellPrice, brand);
         this.type = type;
     }
 

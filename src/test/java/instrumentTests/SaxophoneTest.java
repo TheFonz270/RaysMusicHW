@@ -15,7 +15,7 @@ public class SaxophoneTest {
 
     @Before
     public void setUp() {
-        saxophone = new Saxophone("Selmer", SaxophoneTypes.ALTO);
+        saxophone = new Saxophone(150.00, 200.00, "Selmer", SaxophoneTypes.ALTO);
     }
 
     @Test

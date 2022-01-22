@@ -7,8 +7,8 @@ public class Trumpet extends Brass {
 
     private TrumpetTypes type;
 
-    public Trumpet(String brand, TrumpetTypes type) {
-        super(brand);
+    public Trumpet(double buyPrice, double sellPrice, String brand, TrumpetTypes type) {
+        super(buyPrice, sellPrice, brand);
         this.type = type;
     }
 

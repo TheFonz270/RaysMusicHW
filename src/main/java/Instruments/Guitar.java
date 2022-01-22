@@ -8,8 +8,8 @@ public class Guitar extends Strings {
     private GuitarTypes type;
     private int numOfStrings;
 
-    public Guitar(String brand, GuitarTypes type, int numOfStrings){
-        super(brand);
+    public Guitar(double buyPrice, double sellPrice, String brand, GuitarTypes type, int numOfStrings){
+        super(buyPrice, sellPrice, brand);
         this.type = type;
         this.numOfStrings = numOfStrings;
     }

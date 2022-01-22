@@ -7,8 +7,8 @@ public class Saxophone extends Brass {
 
     private SaxophoneTypes type;
 
-    public Saxophone (String brand, SaxophoneTypes type){
-        super(brand);
+    public Saxophone (double buyPrice, double sellPrice, String brand, SaxophoneTypes type){
+        super(buyPrice, sellPrice, brand);
         this.type = type;
     }
 

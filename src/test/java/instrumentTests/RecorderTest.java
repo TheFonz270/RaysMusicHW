@@ -18,7 +18,7 @@ public class RecorderTest {
 
     @Before
     public void setUp() {
-        recorder = new Recorder("Yamaha", RecorderTypes.ALTO);
+        recorder = new Recorder(50.00, 75.00, "Yamaha", RecorderTypes.ALTO);
     }
 
     @Test
