@@ -1,8 +1,6 @@
 package instrumentTests;
 
-import Instruments.Saxophone;
 import Instruments.Trumpet;
-import instrumentTypes.SaxophoneTypes;
 import instrumentTypes.TrumpetTypes;
 import org.junit.Before;
 import org.junit.Test;

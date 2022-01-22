@@ -20,7 +20,7 @@ public abstract class Stock implements ISell {
         return sellPrice;
     }
 
-    public double CalculateMarkup(){
+    public double calculateMarkup(){
         return sellPrice / buyPrice;
     }
 }

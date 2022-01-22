@@ -27,4 +27,11 @@ public class FluteTest {
     public void canPlay(){
         assertEquals("fwooooo foo", flute.play());
     }
+
+    @Test
+    public void canStock(){
+        assertEquals(40.00, flute.getBuyPrice(), 0);
+        assertEquals(60.00, flute.getSellPrice(), 0);
+        assertEquals(1.5, flute.calculateMarkup(), 0);
+    }
 }
