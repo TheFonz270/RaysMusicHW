@@ -17,6 +17,6 @@ public class Trumpet extends Brass {
     }
 
     public String play() {
-        return "Toot toot";
+        return "toot toot";
     }
 }

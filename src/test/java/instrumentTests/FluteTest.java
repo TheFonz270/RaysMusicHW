@@ -8,17 +8,17 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 
-class FluteTest {
+public class FluteTest {
 
     private Flute flute;
 
     @Before
-    void setUp() {
+    public void setUp() {
         flute = new Flute(FluteTypes.STANDARD);
     }
 
     @Test
-    void getType() {
+    public void canGetType() {
         assertEquals(FluteTypes.STANDARD, flute.getType());
     }
 }

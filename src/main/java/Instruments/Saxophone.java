@@ -1,22 +1,22 @@
 package Instruments;
 
 import instrumentTypes.Brass;
-import instrumentTypes.SaxaphoneTypes;
+import instrumentTypes.SaxophoneTypes;
 
 public class Saxophone extends Brass {
 
-    private SaxaphoneTypes type;
+    private SaxophoneTypes type;
 
-    public Saxophone (String brand, SaxaphoneTypes type){
+    public Saxophone (String brand, SaxophoneTypes type){
         super(brand);
         this.type = type;
     }
 
-    public SaxaphoneTypes getType() {
+    public SaxophoneTypes getType() {
         return type;
     }
 
     public String play(){
-        return "Saxamaphoooooooone";
+        return "Saxomaphoooooooone";
     }
 }

@@ -1,6 +1,6 @@
 package instrumentTypes;
 
-public enum SaxaphoneTypes {
+public enum SaxophoneTypes {
     SOPRANINO,
     SOPRANO,
     ALTO,

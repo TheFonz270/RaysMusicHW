@@ -1,16 +1,27 @@
 package instrumentTests;
 
+import Instruments.Flute;
+import Instruments.Guitar;
+import instrumentTypes.FluteTypes;
+import instrumentTypes.GuitarTypes;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 
-class GuitarTest {
+
+public class GuitarTest {
+
+    private Guitar guitar;
 
     @Before
-    void setUp() {
+    public void setUp() {
+        guitar = new Guitar(GuitarTypes.ACOUSTIC, 6);
     }
 
     @Test
-    void getType() {
+    public void canGetType() {
+        assertEquals(GuitarTypes.ACOUSTIC, guitar.getType());
+        assertEquals(6, guitar.getNumOfStrings());
     }
 }
